@@ -1,0 +1,176 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: beige;
+}
+section{
+    background-color: white;
+    border-radius: 10px;
+    margin: 20px 10% 20px 10%;
+    height: auto;
+    padding-top: 20px;
+    padding-bottom: 10px;
+
+}
+header {
+    background-color: black;
+    text-align: center;
+    align-items: center;
+    height: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+header h1 {
+    color: white;
+    font-size: 20px;
+}
+
+
+h2 {
+    font-size: 18px;
+    text-align: left;
+    margin-bottom: 5px;
+    margin-left: 10px;
+}
+hr{
+    margin-left: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+}
+.stylo-p {
+    margin-top: 0;
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: justify;
+    text-decoration: underline;
+    text-transform: capitalize;
+    text-decoration-color: black;
+    margin-bottom: 5px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+blockquote {
+    font-size: 12px;
+    font-style: italic;
+    text-align: left;
+    align-items: center;
+    display: flex;
+    background-color: #eaeaea;
+    border-left: 5px solid #777676;
+    border-radius: 5px;
+    height: 25px;
+    color: #444343;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding-left: 10px;
+}
+
+.caja-1{
+    border: 1px solid black;
+    box-shadow: 2px 2px 2px 2px gray;
+    padding-left: 10px;
+    margin: 10px 10px 10px 10px;
+}
+
+.caja-2{
+    border: 3px solid black;
+    box-shadow: 2px 2px 2px 2px gray;
+    background-color: burlywood;
+    padding-left: 10px;
+    margin: 10px 10px 10px 10px;
+    font-size: 12;
+}
+
+.relativo{
+    background-color: aquamarine;
+    position: relative;
+    margin: 10px 10px 10px 10px;
+    padding-left: 10px;
+    height: 30px;
+    align-items: center;
+    display: flex;
+    font-size: 12;
+  
+}
+
+.absoluto{
+    display: flex;
+    background-color: rgb(74, 156, 129);
+    color: white;
+    position: absolute;
+    align-items: center;
+    margin: 10px 10px 10px 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    height: 30px;
+    left: 47%;
+    top: 90%;
+    
+}
+
+@media screen and (max-width: 768px) {
+    body{
+        background-color: bisque;
+    }
+    header h1{
+        color: white;
+        font-size: 14px;
+    }
+}
+
+.grid-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(150px,1fr));
+    gap: 10px;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 10px;
+    padding-right: 10px;
+    
+}
+
+.element{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    background-color: darkslateblue;
+    color: white;
+    border-radius: 10px;
+}
+
+.animacion{
+    width: 100px;
+    height: 100px;
+    margin: 10px 0 10px 10px;
+    background-color:indigo;
+    transition: color 1s;
+    cursor: pointer;
+}
+.animacion:hover{
+    background-color: darkcyan;
+}
+.mover{
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    background-color: red;
+    margin: 0px 10px 10px 10px;
+    animation: mover 2s infinite;
+}
+
+@keyframes mover {
+    0%{
+        transform: translate(0);
+    } 
+    50%{
+        transform: translate(300px);
+    } 
+    100%{
+        transform: translate(0px);
+    }
+}
